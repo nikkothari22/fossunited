@@ -205,23 +205,23 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"fossunited.tasks.all"
-# 	],
-# 	"daily": [
-# 		"fossunited.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"fossunited.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"fossunited.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"fossunited.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    # "all": [
+    # 	"fossunited.tasks.all"
+    # ],
+    # "daily": [
+    # 	"fossunited.tasks.daily"
+    # ],
+    # "hourly": [
+    # 	"fossunited.tasks.hourly"
+    # ],
+    "weekly_long": [
+        "fossunited.scheduled_events.weekly.update_community_project_stars"
+    ],
+    # "monthly": [
+    # 	"fossunited.tasks.monthly"
+    # ],
+}
 
 # Testing
 # -------

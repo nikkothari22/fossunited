@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-05-06 22:01:49.641481",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "project_name",
+  "url",
+  "organisation",
+  "route",
+  "is_published",
+  "logo",
+  "column_break_qvoj",
+  "headline",
+  "is_foss_united_grant_recipient",
+  "is_foss_hack_winner",
+  "github_stars",
+  "section_break_kozf",
+  "links",
+  "section_break_cjwu",
+  "description",
+  "header_badges"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Project Name",
+   "reqd": 1
+  },
+  {
+   "description": "GitHub URL",
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL",
+   "options": "URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qvoj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "headline",
+   "fieldtype": "Small Text",
+   "in_preview": 1,
+   "label": "Headline"
+  },
+  {
+   "fieldname": "section_break_cjwu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "organisation",
+   "fieldtype": "Data",
+   "label": "Organisation"
+  },
+  {
+   "description": "Can use this to add HTML badges like Product Hunt, Hacker News etc",
+   "fieldname": "header_badges",
+   "fieldtype": "HTML Editor",
+   "label": "Header Badges"
+  },
+  {
+   "fieldname": "section_break_kozf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Use this to add links to website etc",
+   "fieldname": "links",
+   "fieldtype": "Table",
+   "label": "Links",
+   "options": "FOSS Community Project Links"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_foss_united_grant_recipient",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Is FOSS United Grant recipient"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_foss_hack_winner",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Is FOSS Hack Winner"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Logo"
+  },
+  {
+   "fieldname": "github_stars",
+   "fieldtype": "Int",
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "GitHub Stars",
+   "non_negative": 1,
+   "read_only": 1
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "logo",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-05-06 22:31:44.910985",
+ "modified_by": "Administrator",
+ "module": "FOSSUnited",
+ "name": "FOSS Community Project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "route",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_name"
+}
